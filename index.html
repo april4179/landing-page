@@ -1,118 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- header section -->
-    <header class="header">
-      <div class="header_logo_wrapper">
-        <img
-          class="header_logo"
-          src="./assets/images/zenith-logo.png"
-          alt="zenith-logo"
-        />
-      </div>
-      <nav class="header_nav">
-        <ul class="header_nav_ul">
-          <li>Features</li>
-          <li>Integrations</li>
-          <li>Get Zenith</li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <h2>All you communication. One place.</h2>
-      <div class="hero-section_card_wrapper">
-        <img class="hero-section_card" src="./assets/images/inbound-card.png" />
-      </div>
-    </section>
-    <!-- Features -->
-    <section class="feature-section">
-        <!-- section title -->
-        <h2>The features that matter</h2>
-    <!-- card wrapper -->
-      <div class="feature-section_card_wrapper">
-          
-        <!-- Card 1 -->
-        <div class="features-section_card">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          </p>
-          <div class="features-section_card_image">
-            <img src="./assets/images/features-checkboxes.png" />
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="features-section_card">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quas
-            odio
-          </p>
-          <div class="features-section_card_image">
-            <img src="./assets/images/features-integrations.png" />
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="features-section_card">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non,
-          </p>
-          <div class="features-section_card_image">
-            <img src="./assets/images/features-notifications.png" />
-          </div>
-        </div>
-      </div>
-      <!-- big feature section card -->
-      <div class="features-section_card_big">
-        <img src="./assets/images/zenith-dasboard.png" alt="Dashboard" />
-      </div>
-    </section>
-    <!-- services section -->
-    <section class="services-section"></section>
-        <h2>Your favorite products finally together</h2>
-
-      <div class="services-section_images_wrapper">
-        <!--image 1 -->
-        <div class="services-section_images">
-          <img src="./assets/images/slack-full.png" alt="slack" />
-        </div>
-        <!-- image 2 -->
-        <div class="services-section_images">
-          <img src="./assets/images/zenith-logo.png" alt="trello" />
-        </div>
-        <!-- image 3 -->
-        <div class="services-section_images">
-          <img src="./assets/images/asana.png" alt="asana" />
-        </div>
-        <!-- image 4 -->
-        <div class="services-section_images">
-          <img src="./assets/images/jira.png" alt="jira" />
-        </div>
-        <!-- image 5 -->
-        <div class="services-section_images">
-          <img src="./assets/images/google.png" alt="google" />
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-        <div class="footer_content_wrapper">
-            <h2>Stay up to date</h2>
-            <input type="text">
-            <button>Down</button>
-        </div>
-        <div class="footer_nav">
-            <ul class="footer_nav_ul">
-                <li><a href="">Contact</a></li>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">Policies</a></li>
-                <li><a href="">Privacy & Terms</a></li>
-            </ul>
-        </div>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Zenith</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<script src="global.js"></script>
+		<title>Zenith</title>
+	</head>
+	<body>
+		<div class="hero-wrapper">
+			<header>
+				<nav class="container">
+					<div class="header_logo-card-wrapper">
+						<img src="assets/images/images/zenith-logo.png" alt="zenith logo" />
+					</div>
+					<div class="header-hamburger_menu" onClick="toggleNav()">
+						<img src="./assets/images/images/zenith-hamburger-menu.png" alt="hamburger menu" />
+					</div>
+					<div class="nav-wrapper">
+						<div class="nav-elements" id="nav-elements">
+							<ul>
+								<li><a href="#">FEATURES</a></li>
+								<li><a href="#">INTEGRATIONS</a></li>
+								<li><button id="zenith-button">GET ZENITH</button></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<section class="hero">
+				<div class="hero-bg-texture">
+					<div class="hero-bg-cards">
+						<div class="communication-card-section">
+							<h1>All Your Communication. <br />One Place.</h1>
+						</div>
+						<div class="inbound-card">
+							<div class="inbound-image">
+								<img src="./assets/images/images/inbound-card.png" alt="inbound-card" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section class="features">
+			<h2>The Features That Matter</h2>
+			<div class="features-container">
+				<div class="features-checkboxes">
+					<div class="shadow-box">
+						<p>Mark all your completed threads in one place</p>
+						<img src="./assets/images/images/features-checkboxes.png" alt="features-checkboxes" />
+					</div>
+					<div class="shadow-box">
+						<p>Integrate all your communication platforms</p>
+						<img src="./assets/images/images/features-integrations.png" alt="features-integrations" />
+					</div>
+					<div class="shadow-box">
+						<p>See all your notifications in one place.</p>
+						<img src="./assets/images/images/features-notifications.png" alt="features-notifications" />
+					</div>
+				</div>
+				<div class="dashboard">
+					<img src="./assets/images/images/zenith-dashboard.png" alt="zenith-dashboard" />
+				</div>
+			</div>
+		</section>
+		<section class="integrations">
+			<h1>Your favorite products finally together</h1>
+			<div class="logos">
+				<div class="logo">
+					<div class="communication-wrapper-image">
+						<img src="./assets/images/images/slack-full.png" alt="slack-full" />
+					</div>
+				</div>
+				<div class="logo">
+					<div class="communication-wrapper-image">
+						<img src="./assets/images/images/trello.png" alt="trello" />
+					</div>
+				</div>
+				<div class="logo">
+					<div class="communication-wrapper-image">
+						<img src="./assets/images/images/jira.png" alt="jira" />
+					</div>
+				</div>
+				<div class="logo">
+					<div class="communication-wrapper-image">
+						<img src="./assets/images/images/asana.png" alt="asana" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer-section">
+			<footer>
+				<div class="footer-form">
+					<h1 class="stay-up">Stay up to date</h1>
+					<form>
+						<div class="footer-email-form">
+							<div class="email-input">
+								<input placeholder="Email address" type="email" name="email" />
+							</div>
+							<div class="sign-up-button">
+								<button id="SIGN UP">SIGN UP</button>
+							</div>
+						</div>
+					</form>
+					<div class="footer_list">
+						<ul>
+							<li><a href="#">CONTACT</a></li>
+							<li><a href="#">OUR TEAM</a></li>
+							<li><a href="#">POLICIES</a></li>
+							<li><a href="#">PRIVACY & TERMS</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</body>
 </html>
